@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> batalha de cards </title>
+    <link rel="stylesheet" href="style.css"> <!-- link de css -->
+    <script src="script.js" defer></script>  <!-- link de JavaScript -->
+    <link rel="icon" type="image/png" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtjcjL1TwKJyLSJ5B4AAGjT0X2UWnmt6m71Q&s">
+</head>
+<body>
+<div class="container">
+    <h1> Batalha em cards </h1></div>
+
+<div class="players">
+    <!--jogador 1-->
+    <div id="player1" class="player">
+        <h2> jogador 1 </h2>
+        <img src="https://www.trading-cards-galore.com/wp-content/uploads/2023/10/trading-cards-home-1-1200x950.jpg" widht="300px" height="300px"><br>
+        <div class="life" id="life1">🧡 100 </div>
+        <button onclick="ataque('player1','player2','pancada')">ataque 1 : ☛🂠</button><br>
+    <button onclick="ataque('player1', 'player2', 'chute')"> ataque 2: 🦿</buttom>
+    <button onclick="ataque('player1', 'player2', 'ataque especial')">  ataque especial : ☄️☄️</button>
+    <button onclick=" defender('player1')"> defender:🛡️ </button><br><br>
+    <br></div>
+    
+    <div class="jogador-2">
+    <!--jogador 2-->
+      <div id="player2" class="player">
+        <h2> jogador 2 </h2>
+        <img class="dfd" src="https://wallpapers.com/images/featured/yu-gi-oh-yugo-urmpok8bn3f4wig1.jpg"widht="300px" height="300px"><br> 
+        <div class="life" id="life2">🧡 100 </div>
+        <button onclick="ataque('player1','player2','pancada')">ataque 1 : ☛🂠</button><br>
+    <button onclick="ataque('player1', 'player2', 'chute')"> ataque 2: 🦿</buttom>
+    <button onclick="ataque('player1', 'player2', 'ataque especial')">  ataque especial : ☄️☄️</button>
+    <button onclick=" defender('player1')"> defender:🛡️ </button></div>
+</div>
+      <div id="resultado"></div>
+</div>
+    
+</body>
+</html>

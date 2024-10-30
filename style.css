@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box; /* ajustar o tamanho dos elementos*/
+
+}
+
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin:0;
+    padding:20px;
+    background-color:black;
+    text-align:center;
+    
+}
+.container{
+    max-width:800px; /*largura máxima do container*/
+    margin: o auto;
+    text-align:center;
+    text-decoration:overline;
+    padding:20px 10px 20px 10px;
+    background-color:rgb(36, 1, 1);
+    color:gold;
+    border: 3px solid gold;
+    border-radius: 50px;
+    bottom:20px;
+    box-shadow: 0 0 30px gold;
+    text-shadow: 0 0 20px red;
+
+
+    
+}
+img{
+    border: 2px solid gold;
+    box-shadow: 0 0 60px rgb(255, 196, 0);
+    border-radius: 90px;
+    margin-bottom:10px;
+}
+#life1{
+    box-shadow:0 0 20px rgb(255, 81, 0);
+    color:gold;
+}
+.jogador-2{
+   
+    text-align:center;
+
+    
+}
+h1{
+    text-align:center;
+
+}
+.players{
+    display: flex; /* usa o flexbox para organizar os jogadores*/
+    justify-content: space-around;
+    flex-wrap:wrap;
+}
+.player{
+    flex:1; /*cada jogadpr ocu´pa espaço igual*/
+    margin: 10px;
+    padding: 10px; /* espaõ interno do jogador*/
+    background-color:rgb(65, 2, 2);
+    border-radius: 8px; 
+    text-align: center;
+}
+.one{
+    background-color:black;
+}
+.dfd{
+   box-shadow: 0 0 60px rgb(0, 238, 255);
+   border: 3px solid rgb(159, 241, 255);
+   width: 600px;
+   height: 320px;
+}
+button{
+    padding:10px; /* espaço interno dos botões*/
+    margin:5px; /*margem entre os botões*/
+    border: 1px solid gold; /*remove bordas*/
+    border-radius:5px; /*borda arredondada*/
+    background-color:rgb(18, 12, 44); /* cor de fundo */
+    color:yellow; /* cor da letra */
+    cursor: pointer;
+    transition:background-color 0.3s;
+}
+button-hover{
+    background-color: yellow;
+}
+.life{
+    font-size: 20px; /* t6amanho da fonte da vida*/
+    margin-bottom: 10px; /* espaço abaixo da vida*/
+}
+/* RESPONSIVIDADE*/
+@media (max-width: 600px){
+    body{
+        font-size: 14px; /* ajustar o tamanho da fonte para telas*/
+
+    }
+    .players{
+        flex-direction: column; /* muda para coluna  em telas pequenas*/
+    }
+    .button{
+        width: 100%; /*botões ocupam 100% da largura*/
+    }
+}
+h2{
+    color:aqua;
+    text-shadow: 0 0 40px gold;
+}
